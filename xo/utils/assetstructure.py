@@ -1,0 +1,1 @@
+print('here will be the shot structure that will run each time an asset is created')
