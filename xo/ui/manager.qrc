@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="head">
+    <file>icons/manager.png</file>
+  </qresource>
+</RCC>

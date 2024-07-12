@@ -1,13 +1,13 @@
 import sys
 import os
 import yaml
-import projectstructure
+from utils import onProjectCreate
 from PySide2 import QtCore, QtWidgets, QtGui, QtUiTools
 
 # main variables
 
 DIR_PATH = os.path.dirname(__file__).replace('\\utils', '')
-IMG_PATH = DIR_PATH + '/ui/icons/xolo.png'
+IMG_PATH = DIR_PATH + '/ui/icons/xproject.png'
 UI_PATH = DIR_PATH + "/ui/pcreator.ui"
 MAIN_STRUCTURE = os.path.dirname(__file__)
 
@@ -45,6 +45,7 @@ class ProjectCreator:
         selected_format = self.wg_creator.cbb_format.currentText()
         selected_fps = self.wg_creator.cbb_fps.currentText()
         project_root = project_dir + '/' + project_name
+        # Debug
         print(project_root)
         # Check if project_root exists, create if not
         if not os.path.exists(project_root):
@@ -64,17 +65,19 @@ class ProjectCreator:
         with open(file_path, 'w') as file:
             yaml.dump(data, file, default_flow_style=False)
 
+        # folder structure creation
+
     def create_folders(self, base_path):
         if self.wg_creator.cbb_type.currentText() == 'Commercial':
-            projectstructure.commercialstructure(base_path)
+            onProjectCreate.commercialstructure(base_path)
         elif self.wg_creator.cbb_type.currentText() == 'Animation':
-            projectstructure.animationstructure(base_path)
+            onProjectCreate.animationstructure(base_path)
         elif self.wg_creator.cbb_type.currentText() == 'VFX':
-            projectstructure.vfxstructure(base_path)
+            onProjectCreate.vfxstructure(base_path)
         elif self.wg_creator.cbb_type.currentText() == 'Shot':
-            projectstructure.shotstructure(base_path)
+            onProjectCreate.shotstructure(base_path)
         else:
-            print('thanks')
+            print('no folder was created')
 
 
 # Stand Alone
@@ -91,5 +94,3 @@ def start():
     global main_widget
     main_widget = ProjectCreator()
 
-
-create()
