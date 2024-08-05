@@ -49,7 +49,7 @@ class ProjectBrowser(QtWidgets.QWidget):
         type_list = ['', 'character', 'environment', 'prop']
         self.type_combobox.addItems(type_list)
 
-        # Corrected this line
+        
         self.type_combobox.currentIndexChanged.connect(self.update_assets)
 
     def load_config(self, config_file):
