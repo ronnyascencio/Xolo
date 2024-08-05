@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mainMenu>
+    <menuBar>
+        <subMenu id="xolo_main">
+            <label>Xolo</label>
+
+            <scriptItem id="xolo_save">
+                <label>Save Version</label>
+                <scriptCode><![CDATA[import PrismInit
+PrismInit.pcore.saveScene()]]></scriptCode>
+            </scriptItem>
+
+            <scriptItem id="xolo_browser">
+                <label>Project Browser...</label>
+                <scriptCode><![CDATA[from core.gui import coreBrowser
+coreBrowser.start('houdini')]]></scriptCode>
+            </scriptItem>
+
+            <scriptItem id="xolo_manager">
+                <label>Test...</label>
+                <scriptCode><![CDATA[from dcc.houdini import test
+test.testFunction()]]></scriptCode>
+            </scriptItem>
+
+            <scriptItem id="xolo_shot_template">
+                <label>Shot Template...</label>
+                <scriptCode><![CDATA[from dcc.houdini import ShotTemplate
+ShotTemplate.shotTemplate()]]></scriptCode>
+            </scriptItem>
+
+        </subMenu>
+    </menuBar>
+</mainMenu>

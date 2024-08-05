@@ -4,22 +4,198 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2062e774-c9e2-482e-a33a-8294ebd49cae" name="Changes" comment="project creator">
-      <change afterPath="$PROJECT_DIR$/xo/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xo/ui/icons/manager.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xo/ui/icons/xproject.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xo/ui/manager.qrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xo/ui/manager.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xo/ui/xsubmitter.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xo/utils/xproject.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Xolo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Xolo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="2062e774-c9e2-482e-a33a-8294ebd49cae" name="Changes" comment="reorganize">
+      <change afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/core/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/core/gui/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/core/gui/coreBrowser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/core/gui/ssCreator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/dcc/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/dcc/houdini/MainMenuCommon.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/dcc/houdini/ShotTemplate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/dcc/houdini/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/dcc/houdini/backup/hdacreator_bak1.hiplc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/dcc/houdini/backup/hdacreator_bak2.hiplc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/dcc/houdini/backup/hdacreator_bak3.hiplc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/dcc/houdini/hdacreator.hiplc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/dcc/houdini/menu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/dcc/houdini/otls/backup/lop_Asset_Import.1.0_bak1.hdalc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/dcc/houdini/otls/backup/lop_Asset_Import.1.0_bak2.hdalc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/dcc/houdini/otls/backup/lop_Asset_Import.1.0_bak3.hdalc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/dcc/houdini/otls/backup/lop_Asset_Import.1.0_bak4.hdalc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/dcc/houdini/otls/backup/lop_Asset_Import.1.0_bak5.hdalc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/dcc/houdini/otls/backup/lop_Asset_Import.1.0_bak6.hdalc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/dcc/houdini/otls/lop_Asset_Import.1.0.hdalc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/dcc/houdini/shelf/default.shelf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/dcc/houdini/shelf/xolo.shelf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/dcc/houdini/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/dcc/katana/Shelves/xolo/lookDevTemplate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/dcc/katana/katana_batch_command.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/dcc/katana/live_groups/lookdev_lightRig-grp.katana" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/dcc/katana/templates/HDR/cyclorama_hard_light_4k.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/dcc/katana/templates/HDR/cyclorama_hard_light_4k.exr.linear.tdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/dcc/katana/templates/HDR/cyclorama_hard_light_4k.exr.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/dcc/katana/templates/HDR/cyclorama_hard_light_4k_Raw_ACEScg.exr.tx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/dcc/katana/templates/HDR/marry_hall_4k.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/dcc/katana/templates/HDR/marry_hall_4k.exr.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/dcc/katana/templates/HDR/studio_small_03_4k.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/dcc/katana/templates/HDR/studio_small_03_4k.exr.linear.tdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/dcc/katana/templates/HDR/studio_small_03_4k.exr.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/dcc/katana/templates/geo/ground.abc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/dcc/katana/templates/lookdev_v001.katana" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/dcc/nuke/init.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/dcc/nuke/menu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/dcc/nuke/tools/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/dcc/nuke/tools/nkfiles/xo_kernel.nk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/cg-config-v2.1.0_aces-v1.3_ocio-v2.3.ocio" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/config.ocio" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/ACEScc_to_linear.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/ACEScct_to_linear.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/ACESproxy_to_linear.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/ADX_CID_to_RLE.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/Canon-Log2_to_linear.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/Canon-Log3_to_linear.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/Canon-Log_to_linear.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/CineonLog_to_linear.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/Dolby_PQ_10000_to_linear.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/Dolby_PQ_1000_nits_Shaper.RRTODT.P3-D65_ST2084__1000_nits_.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/Dolby_PQ_1000_nits_Shaper.RRTODT.Rec.2020_HLG__1000_nits_.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/Dolby_PQ_1000_nits_Shaper.RRTODT.Rec.2020_ST2084__1000_nits_.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/Dolby_PQ_1000_nits_Shaper_to_linear.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/Dolby_PQ_108_nits_Shaper.RRTODT.P3D65_ST2084__108_nits_.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/Dolby_PQ_108_nits_Shaper_to_linear.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/Dolby_PQ_2000_nits_Shaper.RRTODT.P3-D65_ST2084__2000_nits_.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/Dolby_PQ_2000_nits_Shaper.RRTODT.Rec.2020_ST2084__2000_nits_.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/Dolby_PQ_2000_nits_Shaper_to_linear.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/Dolby_PQ_4000_nits_Shaper.RRTODT.P3-D65_ST2084__4000_nits_.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/Dolby_PQ_4000_nits_Shaper.RRTODT.Rec.2020_ST2084__4000_nits_.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/Dolby_PQ_4000_nits_Shaper_to_linear.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/Dolby_PQ_48_nits_Shaper_to_linear.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/InvRRT.DCDM.Log2_48_nits_Shaper.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/InvRRT.DCDM__P3D65_Limited_.Log2_48_nits_Shaper.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/InvRRT.P3-D60.Log2_48_nits_Shaper.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/InvRRT.P3-DCI__D60_simulation_.Log2_48_nits_Shaper.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/InvRRT.P3-DCI__D65_simulation_.Log2_48_nits_Shaper.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/InvRRT.P3D65.Log2_48_nits_Shaper.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/InvRRT.P3D65__D60_simulation_.Log2_48_nits_Shaper.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/InvRRT.Rec.2020.Log2_48_nits_Shaper.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/InvRRT.Rec.709.Log2_48_nits_Shaper.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/InvRRT.Rec.709__D60_sim._.Log2_48_nits_Shaper.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/InvRRT.sRGB.Log2_48_nits_Shaper.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/InvRRT.sRGB__D60_sim._.Log2_48_nits_Shaper.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/InvRRTODT.P3-D65_ST2084__1000_nits_.Dolby_PQ_1000_nits_Shaper.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/InvRRTODT.P3-D65_ST2084__2000_nits_.Dolby_PQ_2000_nits_Shaper.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/InvRRTODT.P3-D65_ST2084__4000_nits_.Dolby_PQ_4000_nits_Shaper.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/InvRRTODT.P3D65_ST2084__108_nits_.Dolby_PQ_108_nits_Shaper.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/InvRRTODT.Rec.2020_HLG__1000_nits_.Dolby_PQ_1000_nits_Shaper.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/InvRRTODT.Rec.2020_ST2084__1000_nits_.Dolby_PQ_1000_nits_Shaper.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/InvRRTODT.Rec.2020_ST2084__2000_nits_.Dolby_PQ_2000_nits_Shaper.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/InvRRTODT.Rec.2020_ST2084__4000_nits_.Dolby_PQ_4000_nits_Shaper.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/LMT_Shaper.ACES_1.0_to_0.1_emulation.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/LMT_Shaper.ACES_1.0_to_0.2_emulation.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/LMT_Shaper.ACES_1.0_to_0.7_emulation.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/LMT_Shaper_to_linear.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/Log2_1000_nits_Shaper_to_linear.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/Log2_108_nits_Shaper_to_linear.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/Log2_2000_nits_Shaper_to_linear.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/Log2_4000_nits_Shaper_to_linear.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/Log2_48_nits_Shaper.RRT.DCDM.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/Log2_48_nits_Shaper.RRT.DCDM__P3D60_Limited_.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/Log2_48_nits_Shaper.RRT.DCDM__P3D65_Limited_.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/Log2_48_nits_Shaper.RRT.P3-D60.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/Log2_48_nits_Shaper.RRT.P3-DCI__D60_simulation_.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/Log2_48_nits_Shaper.RRT.P3-DCI__D65_simulation_.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/Log2_48_nits_Shaper.RRT.P3D65.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/Log2_48_nits_Shaper.RRT.P3D65__D60_simulation_.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/Log2_48_nits_Shaper.RRT.P3D65__Rec.709_Limited_.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/Log2_48_nits_Shaper.RRT.Rec.2020.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/Log2_48_nits_Shaper.RRT.Rec.2020__P3D65_Limited_.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/Log2_48_nits_Shaper.RRT.Rec.2020__Rec.709_Limited_.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/Log2_48_nits_Shaper.RRT.Rec.709.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/Log2_48_nits_Shaper.RRT.Rec.709__D60_sim._.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/Log2_48_nits_Shaper.RRT.sRGB.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/Log2_48_nits_Shaper.RRT.sRGB__D60_sim._.spi3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/Log2_48_nits_Shaper_to_linear.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/Protune_Flat_to_linear.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/REDLog3G10_to_linear.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/S-Log1_to_linear.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/S-Log2_to_linear.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/S-Log3_to_linear.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/V-Log_to_linear.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/V3_LogC_1000_to_linear.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/V3_LogC_1280_to_linear.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/V3_LogC_1600_to_linear.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/V3_LogC_160_to_linear.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/V3_LogC_2000_to_linear.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/V3_LogC_200_to_linear.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/V3_LogC_250_to_linear.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/V3_LogC_2560_to_linear.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/V3_LogC_3200_to_linear.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/V3_LogC_320_to_linear.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/V3_LogC_400_to_linear.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/V3_LogC_500_to_linear.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/V3_LogC_640_to_linear.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/V3_LogC_800_to_linear.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/linear_to_rec1886.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/linear_to_rec2020.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/linear_to_rec709.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/luts/linear_to_sRGB.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/python/aces_ocio/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/python/aces_ocio/colorspaces/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/python/aces_ocio/colorspaces/aces.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/python/aces_ocio/colorspaces/arri.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/python/aces_ocio/colorspaces/canon.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/python/aces_ocio/colorspaces/general.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/python/aces_ocio/colorspaces/gopro.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/python/aces_ocio/colorspaces/panasonic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/python/aces_ocio/colorspaces/red.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/python/aces_ocio/colorspaces/sony.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/python/aces_ocio/generate_comparison_images.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/python/aces_ocio/generate_config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/python/aces_ocio/generate_lut.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/python/aces_ocio/process.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/python/aces_ocio/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/python/aces_ocio/tests/tests_aces_config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/python/aces_ocio/utilities.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/python/bin/create_aces_config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/python/bin/generate_comparison_images" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/python/bin/generate_lut" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/aces_1.2/python/bin/tests_aces_config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/fn-nuke_cg-config-v1.0.0_aces-v1.3_ocio-v2.1.ocio" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/fn-nuke_studio-config-v1.0.0_aces-v1.3_ocio-v2.1.ocio" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/nuke-default/config.ocio" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/nuke-default/luts/alexalogc.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/nuke-default/luts/arrilogc4.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/nuke-default/luts/blackmagicfilmgen5.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/nuke-default/luts/cineon.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/nuke-default/luts/clog.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/nuke-default/luts/hybdridloggamma.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/nuke-default/luts/log3g10.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/nuke-default/luts/log3g12.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/nuke-default/luts/panalog.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/nuke-default/luts/ploglin.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/nuke-default/luts/protune.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/nuke-default/luts/rec709.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/nuke-default/luts/redlog.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/nuke-default/luts/slog.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/nuke-default/luts/slog1.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/nuke-default/luts/slog2.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/nuke-default/luts/slog3.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/nuke-default/luts/srgb.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/nuke-default/luts/srgbf.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/nuke-default/luts/st2084.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/nuke-default/luts/viperlog.spi1d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/nuke-default/OCIOConfigs/configs/nuke-default/make.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ocio/OpenColorIO-Configs/studio-config-v2.1.0_aces-v1.3_ocio-v2.3.ocio" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xo/ui/pbrowser.ui" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xo/ui/pcreator.ui" beforeDir="false" afterPath="$PROJECT_DIR$/xo/ui/pcreator.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xo/utils/assetstructure.py" beforeDir="false" afterPath="$PROJECT_DIR$/xo/utils/onAssetCreate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xo/utils/projectcreate.py" beforeDir="false" afterPath="$PROJECT_DIR$/xo/utils/projectBuilder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xo/utils/projectstructure.py" beforeDir="false" afterPath="$PROJECT_DIR$/xo/utils/onProjectCreate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xo/utils/shotstructure.py" beforeDir="false" afterPath="$PROJECT_DIR$/xo/utils/onShotCreate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xo/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/xo/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xo/utils/onProjectCreate.py" beforeDir="false" afterPath="$PROJECT_DIR$/xo/utils/onProjectCreate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xo/utils/projectBuilder.py" beforeDir="false" afterPath="$PROJECT_DIR$/xo/core/gui/projectBuilder.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +225,9 @@
     &quot;accountId&quot;: &quot;0554ddd8-ac0e-40a1-a314-4d3effec98a2&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/xo/dcc/nuke/menu.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -63,20 +242,153 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python.main.executor": "Run",
-    "Python.prisimtest.executor": "Run",
-    "Python.projectBuilder.executor": "Run",
-    "Python.projectcreate.executor": "Run",
-    "Python.xoProject.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.coreBrowser.executor&quot;: &quot;Run&quot;,
+    &quot;Python.init.executor&quot;: &quot;Run&quot;,
+    &quot;Python.lookDevTemplate (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.lookDevTemplate.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.menu.executor&quot;: &quot;Run&quot;,
+    &quot;Python.prisimtest.executor&quot;: &quot;Run&quot;,
+    &quot;Python.projectBuilder.executor&quot;: &quot;Run&quot;,
+    &quot;Python.projectcreate.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ssCreator.executor&quot;: &quot;Run&quot;,
+    &quot;Python.xoProject.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Program Files/Nuke15.1v1/site-packages&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Xolo\xo\core\gui" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.coreBrowser">
+    <configuration name="coreBrowser" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Xolo" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/xo/core/gui" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/xo/core/gui/coreBrowser.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="lookDevTemplate (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Xolo" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/xo/dcc/katana/Shelves/xolo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/xo/dcc/katana/Shelves/xolo/lookDevTemplate.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="lookDevTemplate" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Xolo" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/xo/dcc/katana/Shelves" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/xo/dcc/katana/Shelves/lookDevTemplate.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Xolo" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/xo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/xo/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="menu" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Xolo" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/xo/dcc/nuke" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/xo/dcc/nuke/menu.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.coreBrowser" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.menu" />
+        <item itemvalue="Python.lookDevTemplate (1)" />
+        <item itemvalue="Python.lookDevTemplate" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -117,7 +429,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720495393540</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="reorganize">
+      <option name="closed" value="true" />
+      <created>1720758345885</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1720758345885</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -136,6 +456,7 @@
     <MESSAGE value="inicial commit" />
     <MESSAGE value="readme commit" />
     <MESSAGE value="project creator" />
-    <option name="LAST_COMMIT_MESSAGE" value="project creator" />
+    <MESSAGE value="reorganize" />
+    <option name="LAST_COMMIT_MESSAGE" value="reorganize" />
   </component>
 </project>

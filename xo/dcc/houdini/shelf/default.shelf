@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shelfDocument>
+  <!-- This file contains definitions of shelves, toolbars, and tools.
+ It should not be hand-edited when it is being used by the application.
+ Note, that two definitions of the same element are not allowed in
+ a single file. -->
+
+  <tool name="stemplate" label="Shot Template" icon="PLASMA_App">
+    <script scriptType="python"><![CDATA[
+    
+def shotTemplate():
+    # paths creation
+    hip_name = '.'.join(hou.hipFile.name().split('.')[:-1])
+    shot_name = hip_name.split('/')[-1]
+    root_name = shot_name.split('_')[0]
+    stage_name = '/' + root_name.split('-')[-1]
+    department_name = hip_name.split('/')[8]
+    task_name = hip_name.split('/')[9]
+    shot_path = '/'.join(hip_name.split('/')[0:7])
+    
+    # print(department_name)
+    
+    # Create custom variables
+    # job_root = 'D:/jobs'
+    
+    # hou.hscript(f'setenv JOB = {job_root}')
+    # hou.hscript(f'setenv RENDER = {hip_path}')
+    # hou.hscript(f'setenv ASSET = {hip_path}/my_custom_path')
+    hou.hscript(f'setenv DEPARTMENT = {department_name}')
+    hou.hscript(f'setenv TASK = {task_name}')
+    
+    
+    # node creation
+    
+    stage = hou.node('/stage')
+    prim_root = stage.createNode('primitive', 'SHOT_CONTEXT')
+    prim_root.parm('primpath').set(stage_name)
+    
+    # rop creation if model to lay out 
+    department = hou.getenv('DEPARTMENT')
+    if not 'lgt'in department:
+        layer_rop = stage.createNode('usd_rop', 'department')
+        # Connect layer_rop to prim_root
+        layer_rop.setInput(0, prim_root)
+    
+        # Layout the nodes for better visibility
+        stage.layoutChildren()
+    else:
+        print('department is lighting')
+    
+    # Set a valid menu item for the 'outputprocessors' parameter
+    # layer_rop.parm('outputprocessors').set('savepathsrelativetooutput')
+    # Uncomment the following line if you want to disable network safe save
+    # layer_rop.parm('usenetworksafesave').set(False)
+
+    
+
+shotTemplate()
+]]></script>
+  </tool>
+
+  <toolshelf name="xtools" label="">
+    <memberTool name="tool_1"/>
+  </toolshelf>
+</shelfDocument>
