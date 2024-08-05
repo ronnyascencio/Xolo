@@ -198,6 +198,4 @@ def start(dcc):
     main_widget = ProjectBrowser(dcc)
     print(f"Started ProjectBrowser for {dcc}")
 
-# Example of how to start the ProjectBrowser for Nuke or Houdini
-# start("nuke")  # Uncomment to start for Nuke
-# start("houdini")  # Uncomment to start for Houdini
+
