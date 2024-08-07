@@ -4,6 +4,6 @@ katanaBin.exe --batch --katana-file=D:\jobs\EOL\03_Production\Shots\os\0010\Scen
 
 katanaBin.exe --batch --katana-file=D:\jobs\EOL\03_Production\Shots\os\0010\Scenefiles\lgt\Lighting\os-0010_Lighting_v006.katana --render-node=utilities_env -t 1001-1072
 katanaBin.exe --batch --katana-file=D:\jobs\EOL\03_Production\Shots\os\0010\Scenefiles\lgt\Lighting\os-0010_Lighting_v006.katana --render-node=deep_env -t 1001-1072
-katanaBin.exe --batch --katana-file=D:\jobs\EOL\03_Production\Shots\os\0010\Scenefiles\lgt\Lighting\os-0010_Lighting_v006.katana --render-node=beauty_env -t 1001-1072
+katanaBin.exe --batch --katana-file=D:\jobs\EOL\03_Production\Shots\os\0010\Scenefiles\lgt\Lighting\os-0010_Lighting_v006.katana --render-node=beauty_env -t 1010-1072
 
 D:\jobs\EOL\03_Production\Shots\os\0010\Scenefiles\lgt\Lighting\os-0010_Lighting_v005.katana
