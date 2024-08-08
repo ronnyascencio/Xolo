@@ -145,7 +145,7 @@ class ProjectBrowser(QtWidgets.QWidget):
 
             if os.path.exists(root_path):
                 project_list = os.listdir(root_path)
-                print(f"Contents of {root_path}: {project_list}")
+                #print(f"Contents of {root_path}: {project_list}")
                 self.project_combobox.clear()
                 self.project_combobox.addItems(project_list)
             else:
@@ -286,11 +286,25 @@ class ProjectBrowser(QtWidgets.QWidget):
     # Nuke functions
     def save_project_nuke(self):
         import nuke
-        nuke.message("Saving project in Nuke")
-        print("Saving project in Nuke")
+        script_path = self.lbl_path_info.text()
+        shot = self.shot_combobox.currentText()
+        task = self.task_combobox.currentText()
+        file_name = script_path + '/' + shot + '_' + task + '_v001.nk'
+        script_name = shot + '_' + task + '_v001.nk'
+        if nuke.ask(f'is this the correct shot?: {script_name}'):
+            if not os.path.exists(script_path):
+                os.makedirs(script_path)
+                nuke.scriptSaveAs(file_name)
+                if os.path.exists(file_name):
+                    nuke.message(f'script saved:{file_name}')
+        else:
+            nuke.message('Script not saved')
+
 
     def save_new_version_nuke(self):
-        print("Saving new version in Nuke")
+        import nuke
+        import nukescripts
+        nukescripts.script.script_version_up()
 
     def open_project_nuke(self):
         import nuke
@@ -303,17 +317,90 @@ class ProjectBrowser(QtWidgets.QWidget):
 
     # Houdini functions
     def save_project_houdini(self):
-        print("Saving project in Houdini")
+        import hou
+        import os
+
+        script_path = self.lbl_path_info.text()
+        shot = self.shot_combobox.currentText()
+        task = self.task_combobox.currentText()
+        type_ = self.type_combobox.currentText()
+        asset = self.asset_combobox.currentText()
+
+        # Determine if it's an asset or shot work
+        if any(keyword in script_path for keyword in ['character', 'props', 'environment']):
+            file_name = os.path.join(script_path, f'{asset}_{task}_v001.hiplc')
+            script_name = f'{asset}_{task}_v001.hiplc'
+            if hou.ui.displayMessage(f'Is this the correct shot?: {script_name}', buttons=('Yes', 'No')) == 0:
+                if not os.path.exists(script_path):
+                    os.makedirs(script_path)
+                hou.hipFile.save(file_name)
+                if os.path.exists(file_name):
+                    hou.ui.displayMessage(f'Script saved: {file_name}')
+            else:
+                hou.ui.displayMessage('Script not saved')
+        else:
+            file_name = os.path.join(script_path, f'{shot}_{task}_v001.hiplc')
+            script_name = f'{shot}_{task}_v001.hiplc'
+            if hou.ui.displayMessage(f'Is this the correct shot?: {script_name}', buttons=('Yes', 'No')) == 0:
+                if not os.path.exists(script_path):
+                    os.makedirs(script_path)
+                hou.hipFile.save(file_name)
+                if os.path.exists(file_name):
+                    hou.ui.displayMessage(f'Script saved: {file_name}')
+            else:
+                hou.ui.displayMessage('Script not saved')
 
     def save_new_version_houdini(self):
-        print("Saving new version in Houdini")
+        import hou
+        import os
+        import re
+
+        script_path = self.lbl_path_info.text()
+        shot = self.shot_combobox.currentText()
+        task = self.task_combobox.currentText()
+        type_ = self.type_combobox.currentText()
+        asset = self.asset_combobox.currentText()
+
+        # Determine if it's an asset or shot work
+        if any(keyword in script_path for keyword in ['character', 'prop', 'environment']):
+            file_base = f'{asset}_{task}_v'
+        else:
+            file_base = f'{shot}_{task}_v'
+
+        # Extract the directory path and ensure it exists
+        directory_path = os.path.dirname(script_path)
+        if not os.path.isdir(directory_path):
+            hou.ui.displayMessage(f'Directory does not exist: {directory_path}')
+            return
+
+        # Find existing versions
+        existing_versions = [int(re.search(rf'{file_base}(\d{{3}}).hiplc$', f).group(1)) for f in
+                             os.listdir(directory_path) if re.search(rf'{file_base}(\d{{3}}).hiplc$', f)]
+        if existing_versions:
+            next_version = max(existing_versions) + 1
+        else:
+            next_version = 1
+
+        file_name = os.path.join(directory_path, f'{file_base}{next_version:03d}.hiplc')
+        script_name = f'{file_base}{next_version:03d}.hiplc'
+
+        if hou.ui.displayMessage(f'Save as new version?: {script_name}', buttons=('Yes', 'No')) == 0:
+            hou.hipFile.save(file_name)
+            if os.path.exists(file_name):
+                hou.ui.displayMessage(f'New version saved: {file_name}')
+        else:
+            hou.ui.displayMessage('Save new version canceled')
 
     def open_project_houdini(self):
         import hou
+
         script_path = self.lbl_path_info.text()
 
-        hou.hipFile.load(script_path)
-
+        if os.path.exists(script_path):
+            hou.hipFile.load(script_path)
+            hou.ui.displayMessage(f'Project opened: {script_path}')
+        else:
+            hou.ui.displayMessage(f'File does not exist: {script_path}')
 
 
 def start(dcc):
